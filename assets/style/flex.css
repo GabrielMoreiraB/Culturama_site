@@ -1,3 +1,4 @@
+/* cabeçalho */
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -8,12 +9,21 @@
 }
 
 @media (min-width: 720px){
+  /* cabeçalho */
   .menu{
     column-gap:75px;
-  }  
+  } 
+  
+  /* categorias */
+  .categorias__lista{
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    row-gap: 1rem;
+  }
 }
 
 @media (min-width: 1440px){
+  /* cabeçalho */
     .menu{
       column-gap:105px;
       flex-wrap: nowrap;
@@ -40,3 +50,24 @@
     }
   }
 
+  /* categorias */
+.categorias__lista{
+  display: flex;
+  flex-direction: column;
+  row-gap: .5em;
+}
+
+.destaques{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.destaques_barra{
+  flex-grow:1;
+}
+
+.destaques > div {
+  white-space: nowrap;
+}
