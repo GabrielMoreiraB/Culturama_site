@@ -12,6 +12,42 @@
     grid-row: 2/4;
 }
 
+/* evento item */
+.eventos__item{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto repeat(2, 1fr) auto;
+}
+
+.eventos__item img{
+    grid-column: 1/3;
+}
+
+.eventos__item h3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+}
+
+.eventos__item h4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.eventos__item h5{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    align-self: flex-end;
+}
+
+
+.eventos__item button{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: end;
+}
+
+/* agenda item */
 .agenda__item{
     display: grid;
 }
@@ -22,7 +58,7 @@
 
 @media (min-width: 720px){
     .banner{
-        grid-template-columns: calc(50% - 0.75em) auto auto ;
+        grid-template-columns: calc(50% - 0.75rem) auto auto ;
         column-gap: 1.5em;
     }
 
